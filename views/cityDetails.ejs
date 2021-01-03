@@ -1,0 +1,18 @@
+<body>
+    <h1>All City Details</h1>
+    <form action="/allDetails/:city" method="POST">
+        <label for="cityCode">City Code</label>
+        <input type="text" id="cityCode" name="cty_code" value="<%= cty_code %>"><br>
+        <label for="cityName">City Name</label>
+        <input type="text" id="cityName" name="cty_name" value="<%= cty_name %>"><br>
+        <label for="cityPopulation">City Population</label>
+        <input type="number" id="cityPopulation" name="population" value="<%= population %>"><br>
+        <label for="citySea">By the Sea</label>
+        <input type="text" id="citySea" name="isCoastal" value="<%= isCoastal %>"><br>
+        <label for="cityArea">Area (KM)</label>
+        <input type="number" id="cityArea" name="areaKM" value="<%= areaKM %>"><br>
+    </form>
+
+    <!-- Returns to Home Page -->
+    <a href="/">Home</a>
+</body>

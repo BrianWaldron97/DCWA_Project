@@ -1,0 +1,43 @@
+<!-- CSS -->
+<head>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<h1>Countries</h1>
+
+<!-- Button to add country -->
+<a href="/addCountry"><button>Add Country</button></a>
+
+<br></br>
+
+<!-- Table of Countries -->
+<table>
+    <tr>
+        <th>Country Code</th>
+        <th>Country Name</th>
+        <th>Country Details</th>
+        <th>Action</th>
+    </tr>
+    <% countries.forEach((country) => { %>
+        <tr>
+            <td>
+                <%= country.co_code %>
+            </td>
+            <td>
+                <%= country.co_name %>
+            </td>
+            <td>
+                <%= country.co_details %>
+            </td>
+            <td>
+                <a>Update</a>
+            </td>
+            <td>
+                <a>Delete</a>
+            </td>
+        </tr>
+        <% }) %>
+</table>
+
+<!-- Returns to Home Page -->
+<a href="/">Home</a>

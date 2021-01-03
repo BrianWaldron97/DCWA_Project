@@ -1,0 +1,32 @@
+<!-- CSS -->
+<head>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<h1>Heads Of State</h1>
+
+<!-- Button to add Head Of State -->
+<a href="/addHeadOfState"></a><button>Add Head Of State</button></a>
+
+<br></br>
+
+<!-- Head of State Table -->
+<table>
+    <tr>
+        <th>Country Code</th>
+        <th>Head of State</th>
+    </tr>
+    <% states.forEach((state) => { %>
+        <tr>
+            <td>
+                <%= state._id %>
+            </td>
+            <td>
+                <%= state.headOfState %>
+            </td>
+        </tr>
+        <% }) %>
+</table>
+
+<!-- Returns to Home Page -->
+<a href="/">Home</a>
